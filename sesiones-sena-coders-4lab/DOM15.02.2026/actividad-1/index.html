@@ -7,39 +7,22 @@
 <html lang="es">
 <head>
   <title>Hoja de vida</title>
-  <style>
-    ul.menu{
-      display: flex;
-      gap: 1em;
-      border-bottom: 3px #333232 solid;
-      padding-bottom: .5em;
-      padding-left: 0;
-    }
-    ul li{
-      list-style: none;     
-    }
-    table{
-      border: 1px solid hsl(350, 94%, 25%);
-      border-collapse: collapse;
-    }
-    td, th{
-      border: 1px solid rgb(136, 12, 33);
-    }
-  </style>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <h1>Mi Perfil Profesional</h1>
   <nav>
     <ul class="menu">
-     <li><a href="#">Inicio </a></li>
+     <li><a href="./index.html">Inicio </a></li>
      <li>|</li>
-     <li class="red"><a href="#">Servicios</a></li>
+     <li><a href="./servicios.html">Servicios</a></li>
      <li>|</li>
-     <li><a href="#">Contacto</a></li>   
+     <li><a href="./contacto.html">Contacto</a></li>   
     </ul>
   </nav>
 
   <h2>Sobre mi</h2>
+  <img class="img-perfil" src="./images/img-perfil.png" alt="">
   <p>Soy estudiante del programa de formación <strong>ADSI</strong>, con interés de convertirme desarrollar web PRO</p>
 
   <h2>Mis habilidades</h2>
@@ -55,17 +38,27 @@
 
   <h2>Horario de estudio</h2>
   <table>
-    <tr>
-      <th>Día</th>    <th>Materia</th>  
-    </tr> 
-    <tr>
-      <td>Lunes</td>  <td>Fundamentos</td>
-    </tr>
+
+    <thead>
+      <tr><!-- Esta etiqueta crea una fila -->
+        <th>Día</th>    <th>Materia</th>   <!-- Esta es una etiqueta de celada de cabecera -->
+      </tr> 
+    </thead>
+
+
+    <tbody>
+      <tr>
+        <td>Lunes</td>  <td>Fundamentos</td> <!-- Celda normal -->
+      </tr>
     <tr>
       <td>Miércoles</td>  <td>Base de datos</td>
     </tr>
+    </tbody>
+
   </table>
 
-  <p>2026 - Mi pagina web</p>
+  <footer>
+    <p>2026 - Mi pagina web</p>
+  </footer>
 </body>
 </html>
